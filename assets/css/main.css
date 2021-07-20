@@ -2119,7 +2119,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'font-awesome';
+			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
 
@@ -2136,7 +2136,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'font-awesome';
+			font-family: 'Font Awesome 5 Brands';
 		}
 
 		.icon.major {
@@ -3100,7 +3100,7 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
-						font-family: 'font-awesome';
+						font-family: 'Font Awesome 5 Free';
 						font-weight: 900;
 					}
 
