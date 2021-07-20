@@ -1,9 +1,4 @@
 (function($) {
-
-	/**
-	 * Generate an indented list of links from a nav. Meant for use with panel().
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.navList = function() {
 
 		var	$this = $(this);
@@ -33,19 +28,11 @@
 		return b.join('');
 
 	};
-
-	/**
-	 * Panel-ify an element.
-	 * @param {object} userConfig User config.
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.panel = function(userConfig) {
 
-		// No elements?
 			if (this.length == 0)
 				return $this;
 
-		// Multiple elements?
 			if (this.length > 1) {
 
 				for (var i=0; i < this.length; i++)
@@ -55,26 +42,22 @@
 
 			}
 
-		// Vars.
+
 			var	$this = $(this),
 				$body = $('body'),
 				$window = $(window),
 				id = $this.attr('id'),
 				config;
 
-		// Config.
 			config = $.extend({
 
-				// Delay.
 					delay: 0,
 
-				// Hide panel on link click.
+
 					hideOnClick: false,
 
-				// Hide panel on escape keypress.
 					hideOnEscape: false,
 
-				// Hide panel on swipe.
 					hideOnSwipe: false,
 
 				// Reset scroll position on hide.
@@ -94,20 +77,15 @@
 
 			}, userConfig);
 
-			// Expand "target" if it's not a jQuery object already.
 				if (typeof config.target != 'jQuery')
 					config.target = $(config.target);
 
-		// Panel.
-
-			// Methods.
 				$this._hide = function(event) {
 
-					// Already hidden? Bail.
+
 						if (!config.target.hasClass(config.visibleClass))
 							return;
 
-					// If an event was provided, cancel it.
 						if (event) {
 
 							event.preventDefault();
@@ -296,10 +274,6 @@
 
 	};
 
-	/**
-	 * Apply "placeholder" attribute polyfill to one or more forms.
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.placeholder = function() {
 
 		// Browser natively supports placeholders? Bail.
