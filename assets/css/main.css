@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-/*
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -48,6 +42,8 @@ blockquote, q {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	       display: block;
+       overflow-x: auto;
 }
 
 body {
@@ -2122,7 +2118,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'turtles';
+			font-family: 'font-awesome';
 			font-weight: 400;
 		}
 
@@ -2139,7 +2135,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'turtles';
+			font-family: 'font-awesome';
 		}
 
 		.icon.major {
@@ -3103,7 +3099,7 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
-						font-family: 'turtles';
+						font-family: 'font-awesome';
 						font-weight: 900;
 					}
 
@@ -3357,14 +3353,14 @@ input, select, textarea {
 
 	}
 .is-preload #page-wrapper #header h1 .SBS #logo {
-	font-family: turtless;
+	font-family: font-awesome;
 }
 .is-preload #page-wrapper #header h1 .SBS {
-	font-family: Turtles;
+	font-family: font-awesome;
 }
 .is-preload #page-wrapper #header h1 .SBS #logo {
-	font-family: Turtles;
+	font-family: font-awesome;
 }
 .is-preload #page-wrapper #header #nav ul .current a {
-	font-family: Turtles;
+	font-family: font-awesome;
 }
