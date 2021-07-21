@@ -40,11 +40,13 @@ blockquote, q {
 		content: none;
 	}
 
-table {
+@media screen and (max-width: 320px) {
+     table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	display: block;
     overflow-x: auto;
+}
 }
 
 body {
